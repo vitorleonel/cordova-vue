@@ -8,5 +8,10 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Vitor Leonel <falecom@vitorleonel.com>",
-    "license": "Apache-2.0"
+    "license": "Apache-2.0",
+    "dependencies": {
+        "vue": "^2.5.16",
+        "vue-router": "^3.0.1",
+        "vuex": "^3.0.1"
+    }
 }

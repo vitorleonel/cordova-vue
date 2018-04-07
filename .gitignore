@@ -1,4 +1,9 @@
+/node_modules
 /hooks
 /platforms
 /www
 /plugins
+
+.idea
+.DS_Store
+package-lock.json
