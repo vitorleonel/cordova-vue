@@ -1,3 +1,3 @@
 <template>
-    <div>Cordova Vue</div>
+    <router-view></router-view>
 </template>
