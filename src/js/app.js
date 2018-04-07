@@ -1,7 +1,8 @@
+import '@/js/bootstrap'
+import '@/scss/app.scss'
+
 import Vue from 'vue'
 import App from './components/App'
-
-import '@/scss/app.scss'
 
 new Vue({
     el: '#app',

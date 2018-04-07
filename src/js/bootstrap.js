@@ -1,0 +1,1 @@
+// Defina algumas coisas globais caso queira
