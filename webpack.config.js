@@ -1,6 +1,7 @@
 const path = require('path')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ExtractTextPlugin = require("extract-text-webpack-plugin")
 
 module.exports = {
 
@@ -20,7 +21,14 @@ module.exports = {
             },
             {
                 test: /\.vue$/,
-                loader: 'vue-loader'
+                loader: 'vue-loader',
+                options: {
+                    extractCSS: true
+                }
+            },
+            {
+                test: /\.(css|scss)$/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
             }
         ]
     },
@@ -35,6 +43,7 @@ module.exports = {
 
     plugins: [
         new CleanWebpackPlugin(['www']),
+        new ExtractTextPlugin('css/app.bundle.css'),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src/index.html')
         })
