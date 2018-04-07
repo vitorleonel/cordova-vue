@@ -7,8 +7,12 @@
 
 <style lang="scss" scoped>
     .page-404 {
-        max-width: 40vw;
-        margin: 1rem auto;
+        margin: 0 auto;
+        padding: 1rem;
+
+        @media screen and (min-width: 768px) {
+            max-width: 40vw;
+        }
     }
 </style>
 
