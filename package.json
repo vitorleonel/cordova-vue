@@ -5,7 +5,7 @@
     "description": "A sample Apache Cordova application that responds to the deviceready event.",
     "main": "index.js",
     "scripts": {
-        "dev": "webpack-dev-server --hot --host 0.0.0.0 --mode=development"
+        "dev": "webpack-dev-server --hot --mode=development"
     },
     "author": "Vitor Leonel <falecom@vitorleonel.com>",
     "license": "Apache-2.0",
